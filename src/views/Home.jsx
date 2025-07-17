@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../assets/styles/Home.css'
 import '../App.css';
 import logo from '../assets/img/logo.jpg';
@@ -30,18 +31,21 @@ const Home = () => {
           </div>
 
           {/* Right: Text Content */}
-          <div className='w-6/12 h-full flex flex-col justify-center items-center'>
-            <div className='text w-full h-2/4 flex flex-col items-center justify-center'>
-              <h1 className='header'>
+          <div className='w-6/12 h-full flex flex-col justify-center items-start px-8'>
+            <div className='w-full mb-8'>
+              <h1 className='header mb-4'>
                 Un Espacio Seguro para sanar y evolucionar a tu propio ritmo.
               </h1>
-              <p className='home-paragraph'>
+              <p className='home-paragraph text-left'>
                 A veces la vida nos presenta momentos difíciles. Aprender a navegar esos retos es el primer paso para construir una vida más plena. Estoy aquí para acompañarte en ese camino.
               </p>
             </div>
 
-            <div className='w-full h-2/4'>
-
+            <div className='home-links'>
+              <Link to="/about" className='btn-primary'>MÁS SOBRE MÍ</Link>
+              <Link to="/therapy" className='btn-primary'>TERAPIA</Link>
+              <Link to="/appointment" className='btn-primary'>RESERVA UNA CITA</Link>
+              <Link to="/contact" className='btn-primary'>CONTÁCTAME</Link>
             </div>
           </div>
         </div>

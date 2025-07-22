@@ -27,3 +27,35 @@
   margin: 0 auto;
   padding-bottom: 3rem;
 }
+
+@media (max-width: 768px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-container {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 1rem;
+  }
+
+  .home-logo{
+    max-width: 65%;
+  }
+
+  .text-content {
+    width: 100%;
+  }
+
+  .header {
+    padding: 0 0px;
+  }
+
+  .home-links {
+    padding: 0 0px;
+  }
+
+
+
+}

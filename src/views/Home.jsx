@@ -25,13 +25,11 @@ const Home = () => {
         ))}
 
         <div className='content flex w-full h-full'>
-          {/* Left: Logo */}
-          <div className='w-6/12 h-full flex justify-center items-center'>
+          <div className='logo-container w-6/12 h-full flex justify-center items-center'>
             <img className='home-logo' src={logo} alt="Logo Tatiana Loaiza" />
           </div>
 
-          {/* Right: Text Content */}
-          <div className='w-6/12 h-full flex flex-col justify-center items-start px-8'>
+          <div className='text-content w-6/12 h-full flex flex-col justify-center items-start px-8'>
             <div className='w-full mb-8'>
               <h1 className='header mb-4'>
                 Un Espacio Seguro para sanar y evolucionar a tu propio ritmo.

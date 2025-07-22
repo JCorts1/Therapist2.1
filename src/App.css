@@ -127,7 +127,6 @@
   text-align: left;
 }
 
-/* Primary Button - Lotus Theme */
 .btn-primary {
   background-color: #7B6D8D;
   color: #F1EBE4;
@@ -150,6 +149,7 @@
   text-align: center;
   width: 100%;
   min-height: 50px;
+  max-height: 51px;
 }
 
 /* Hover state with leaf accent */
@@ -255,4 +255,16 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(123, 109, 141, 0.4);
   gap: 15px;
+}
+
+@media (max-width: 768px) {
+
+  .layout {
+    flex-direction: column;
+  }
+
+  .btn-primary {
+    min-width: 9rem;
+  }
+
 }

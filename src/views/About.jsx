@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../App.css';
+import NavBar from '../components/NavBar';
 
 const About = () => {
   return (
     <div className='main-container'>
+      <NavBar/>
       <div className='layout'>
       {[...Array(5)].map((_, i) => (
           <div key={i} className='leaf'>

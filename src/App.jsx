@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './views/Home'
+import About from './views/About'
 
 
-const About = () => <h2>About</h2>;
 const Dashboard = () => <h2>Dashboard</h2>;
 
 function App() {

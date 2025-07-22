@@ -1,3 +1,8 @@
+.home-layout {
+  margin-top: -7rem;
+  min-height: 98%;
+}
+
 .home-logo {
   width: 30rem;
   border-radius: 50%;
@@ -55,7 +60,6 @@
   .home-links {
     padding: 0 0px;
   }
-
 
 
 }

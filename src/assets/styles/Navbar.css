@@ -1,0 +1,187 @@
+
+/* NavBar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(241, 235, 228, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-scrolled {
+  background-color: rgba(241, 235, 228, 0.98);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+  color: #7B6D8D;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: translateY(-2px);
+}
+
+.logo-text {
+  margin-right: 8px;
+}
+
+.logo-leaf {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover .logo-leaf {
+  transform: rotate(10deg);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #7B6D8D;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #7B6D8D;
+}
+
+.nav-link:hover::after,
+.nav-link-active::after {
+  width: 100%;
+}
+
+.nav-link-active {
+  color: #7B6D8D;
+}
+
+.nav-appointment-btn {
+  background-color: #7B6D8D;
+  color: #F1EBE4;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.nav-appointment-btn:hover {
+  background-color: #6B5D7D;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(123, 109, 141, 0.3);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333333;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .nav-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: rgba(241, 235, 228, 0.98);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 2rem 0;
+    gap: 1.5rem;
+  }
+
+  .nav-menu-active {
+    left: 0;
+  }
+
+  .nav-appointment-btn {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .bar-active:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .bar-active:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar-active:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+/* Add padding to your main containers to account for fixed navbar */
+.main-container {
+  padding-top: 80px; /* Adjust this value based on your navbar height */
+}

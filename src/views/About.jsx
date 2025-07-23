@@ -1,14 +1,36 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../App.css';
+import '../assets/styles/About.css';
 import NavBar from '../components/NavBar';
+import Autoplay from "embla-carousel-autoplay"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const About = () => {
+  // Sample images - replace with your actual images
+  const images = [
+    "https://placehold.co/600x400/E4D6D6/333333?text=Espacio+Seguro",
+    "https://placehold.co/600x400/D6E4D8/333333?text=Terapia+con+Niños",
+    "https://placehold.co/600x400/E4E4D6/333333?text=Crecimiento+Personal",
+    "https://placehold.co/600x400/D6D6E4/333333?text=Talleres+Grupales",
+    "https://placehold.co/600x400/D6E0E4/333333?text=Bienestar+Integral"
+  ]
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: false })
+  )
+
   return (
     <div className='main-container'>
       <NavBar/>
       <div className='layout'>
-      {[...Array(5)].map((_, i) => (
+        {[...Array(5)].map((_, i) => (
           <div key={i} className='leaf'>
             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -24,6 +46,48 @@ const About = () => {
           </div>
         ))}
 
+        <div className="content about-content">
+          {/* Left side - Text content */}
+          <div className="text-section">
+            <h1 className="header">About Our Journey</h1>
+            <p className="text about-text">
+              Discover the beauty of nature through our curated collection
+              of seasonal experiences. Each moment captured tells a story
+              of growth, change, and the eternal cycle of life.
+            </p>
+          </div>
+
+          {/* Right side - Vertical Carousel */}
+          <div className="carousel-section">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              orientation="vertical"
+              plugins={[plugin.current]}
+              className="about-carousel"
+            >
+              <CarouselContent className="carousel-content-wrapper">
+                {images.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="carousel-item-padding">
+                      <div className="carousel-image-container">
+                        <img
+                          src={image}
+                          alt={`Slide ${index + 1}`}
+                          className="carousel-image"
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="carousel-prev" />
+              <CarouselNext className="carousel-next" />
+            </Carousel>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -276,6 +276,11 @@
   .carousel-content-wrapper {
     height: 250px !important;
   }
+
+  .text-content-scrollable {
+    max-height: 20rem;
+    padding: 0;
+  }
 }
 
 /* Large desktop styles */
@@ -285,7 +290,11 @@
   }
 
   .carousel-content-wrapper {
-    height: 700px !important;
+    height: 600px !important;
+  }
+
+  .carousel-image-container {
+    max-height: 500px;
   }
 }
 
@@ -300,7 +309,11 @@
   }
 
   .carousel-content-wrapper {
-    height: 750px !important;
+    height: 800px !important;
+  }
+
+  .carousel-image-container {
+    max-height: 800px;
   }
 
   .header {

@@ -276,6 +276,11 @@
   .carousel-content-wrapper {
     height: 250px !important;
   }
+
+  .text-content-scrollable {
+    max-height: 20rem;
+    padding: 0;
+  }
 }
 
 /* Large desktop styles */
@@ -285,22 +290,31 @@
   }
 
   .carousel-content-wrapper {
-    height: 700px !important;
+    height: 600px !important;
+  }
+
+  .carousel-image-container {
+    max-height: 500px;
   }
 }
 
 /* Extra large desktop styles */
-@media (min-width: 1920px) {
+@media (min-width: 1820px) {
   .about-content {
     max-width: 1400px;
   }
 
   .about-carousel {
-    max-width: 900px;
+    max-width: 700px;
   }
 
   .carousel-content-wrapper {
-    height: 750px !important;
+    height: 700px !important;
+    max-width: 600px !important;
+  }
+
+  .carousel-image-container {
+    max-height: 650px;
   }
 
   .header {

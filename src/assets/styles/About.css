@@ -301,7 +301,7 @@
 /* Extra large desktop styles */
 @media (min-width: 1820px) {
   .about-content {
-    max-width: 1400px;
+    max-width: 1401px;
   }
 
   .about-carousel {

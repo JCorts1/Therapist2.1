@@ -2,8 +2,8 @@
 .contact-content {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: space-between;
+  gap: 8rem;
   width: 100%;
   height: 100%;
   max-width: 1200px;
@@ -12,7 +12,7 @@
   overflow-y: auto;
 }
 
-
+/* Form Section */
 .contact-form-section {
   flex: 1;
   max-width: 500px;
@@ -81,14 +81,14 @@
   max-width: 200px;
 }
 
-/* Info Section */
+/* Info Section - PROPER CENTERING FOR DESKTOP */
 .contact-info-section {
   flex: 1;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: auto;
-  padding-top: 3rem;
+  padding-top: 0;
+  max-width: 500px;
 }
 
 .contact-info-content {
@@ -97,6 +97,7 @@
   border-radius: 12px;
   width: 100%;
   max-width: 400px;
+  margin: 0 auto;
 }
 
 .info-header {
@@ -172,10 +173,9 @@
 }
 
 /* Laptop screens (like MacBook) */
-@media (max-width: 1440px) {
+@media (max-width: 1440px) and (min-width: 769px) {
   .contact-content {
     padding: 1.5rem;
-    gap: 2rem;
   }
 
   .contact-form {
@@ -194,11 +194,6 @@
 
   .contact-info-content {
     padding: 1.5rem;
-  }
-
-  .contact-info-section {
-    padding-top: 0;
-    align-items: center;
   }
 }
 
@@ -226,10 +221,11 @@
   }
 }
 
-/* Mobile Styles */
+/* Mobile Styles - COMPLETELY DIFFERENT LAYOUT */
 @media (max-width: 768px) {
   .contact-content {
     flex-direction: column;
+    justify-content: flex-start;
     padding: 1.5rem;
     gap: 2rem;
     overflow-y: auto;
@@ -253,10 +249,7 @@
 
   .contact-info-content {
     padding: 1.5rem;
-  }
-
-  .contact-info-section {
-    padding-top: 0;
+    margin: 0;
   }
 
   .info-header {

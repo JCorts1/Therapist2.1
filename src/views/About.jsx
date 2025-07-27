@@ -4,6 +4,11 @@ import '../App.css';
 import '../assets/styles/About.css';
 import NavBar from '../components/NavBar';
 import Autoplay from "embla-carousel-autoplay"
+import KidsTherapy from '@/assets/img/kids-therapy.jpg'
+import ProfilePic from '@/assets/img/crecimiento-personal.jpg'
+import GroupTherapy from '@/assets/img/group-therapy.jpg'
+import SoldierTherapy from '@/assets/img/soldier-img.jpg'
+import PersonalDev from '@/assets/img/soldier-therapy.jpg'
 import {
   Carousel,
   CarouselContent,
@@ -16,10 +21,15 @@ const About = () => {
   // Sample images - replace with your actual images
   const images = [
     "https://placehold.co/600x400/E4D6D6/333333?text=Espacio+Seguro",
+    ProfilePic,
     "https://placehold.co/600x400/D6E4D8/333333?text=Terapia+con+Niños",
+    KidsTherapy,
     "https://placehold.co/600x400/E4E4D6/333333?text=Crecimiento+Personal",
+    PersonalDev,
     "https://placehold.co/600x400/D6D6E4/333333?text=Talleres+Grupales",
-    "https://placehold.co/600x400/D6E0E4/333333?text=Bienestar+Integral"
+    GroupTherapy,
+    "https://placehold.co/600x400/D6E0E4/333333?text=Bienestar+Integral",
+    SoldierTherapy,
   ]
 
   const plugin = React.useRef(

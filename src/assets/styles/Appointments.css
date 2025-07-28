@@ -5,9 +5,9 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 10% 2rem;
-  overflow-y: auto;
+  padding: 2rem; /* Adjusted padding to prevent overflow */
   gap: 3rem;
+  /* Removed overflow-y: auto to prevent scrolling on desktop */
 }
 
 /* Form Section - Left Side */
@@ -139,12 +139,54 @@
   color: #7B6D8D;
 }
 
+/* Media Query for Larger Desktop Screens */
+@media (min-width: 1600px) {
+  .appointment-content {
+    gap: 5rem; /* Increase space between form and image */
+  }
+
+  .appointment-form-section,
+  .appointment-animation-section {
+    max-width: 600px;
+  }
+
+  .appointment-form-container {
+    max-width: 500px; /* Make the form wider */
+    padding: 2.5rem;
+  }
+
+  .therapist-animation {
+    max-width: 750px;
+    height: 400px;
+  }
+
+  .appointment-header {
+    font-size: 32px;
+  }
+
+  .appointment-subtitle {
+    font-size: 15px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .appointment-content {
     flex-direction: column;
-    padding: 10% 1rem;
+    justify-content: flex-start; /* Aligns content to the top on mobile */
+    padding: 10% 1rem 2rem 1rem;
     gap: 2rem;
+    overflow-y: auto; /* Enable scrolling ONLY for mobile */
   }
 
   .appointment-form-section,
@@ -185,7 +227,7 @@
 /* Small Mobile */
 @media (max-width: 480px) {
   .appointment-content {
-    padding: 10% 0.75rem;
+    padding: 10% 0.75rem 2rem 0.75rem;
   }
 
   .appointment-form-container {

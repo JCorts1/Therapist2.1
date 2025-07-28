@@ -185,17 +185,9 @@ const Appointments = () => {
                 </button>
               </form>
 
-              <div className='appointment-info'>
-                <p className='info-note'>
-                  <strong>Nota:</strong> Esta es una solicitud de cita.
-                  Te confirmaremos la disponibilidad por correo electrónico
-                  en las próximas 24 horas.
-                </p>
-              </div>
             </div>
           </div>
 
-          {/* Right side - Animation */}
           <div className='appointment-animation-section'>
             <img
               src={therapistAnimation}

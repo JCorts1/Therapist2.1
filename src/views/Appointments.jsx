@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import NavBar from '@/components/NavBar';
 import '../App.css';
 import '@/assets/styles/Appointments.css'
+import therapistAnimation from '@/assets/img/therapist-animation.gif';
 
 const Appointments = () => {
   const [formData, setFormData] = useState({
@@ -97,98 +98,110 @@ const Appointments = () => {
         ))}
 
         <div className='content appointment-content'>
-          <div className='appointment-form-container'>
-            <h1 className='header appointment-header'>Reserva tu Cita</h1>
-            <p className='appointment-subtitle'>
-              Completa el formulario y te contactaremos para confirmar tu cita.
-            </p>
-
-            <form className='appointment-form' onSubmit={handleSubmit}>
-              <div className='form-group'>
-                <label htmlFor='name'>Nombre completo *</label>
-                <input
-                  type='text'
-                  id='name'
-                  name='name'
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  placeholder='Tu nombre completo'
-                />
-              </div>
-
-              <div className='form-group'>
-                <label htmlFor='email'>Correo electrónico *</label>
-                <input
-                  type='email'
-                  id='email'
-                  name='email'
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  placeholder='tu@email.com'
-                />
-              </div>
-
-              <div className='form-group'>
-                <label htmlFor='sessionType'>Tipo de sesión *</label>
-                <select
-                  id='sessionType'
-                  name='sessionType'
-                  value={formData.sessionType}
-                  onChange={handleChange}
-                  required
-                >
-                  {sessionTypes.map(type => (
-                    <option key={type.value} value={type.value}>
-                      {type.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div className='form-group'>
-                <label htmlFor='date'>Fecha deseada *</label>
-                <input
-                  type='date'
-                  id='date'
-                  name='date'
-                  value={formData.date}
-                  onChange={handleChange}
-                  min={today}
-                  required
-                />
-              </div>
-
-              <div className='form-group'>
-                <label htmlFor='time'>Hora preferida *</label>
-                <select
-                  id='time'
-                  name='time'
-                  value={formData.time}
-                  onChange={handleChange}
-                  required
-                >
-                  {availableTimes.map(time => (
-                    <option key={time.value} value={time.value}>
-                      {time.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <button type='submit' className='btn-primary appointment-submit'>
-                Solicitar Cita
-              </button>
-            </form>
-
-            <div className='appointment-info'>
-              <p className='info-note'>
-                <strong>Nota:</strong> Esta es una solicitud de cita.
-                Te confirmaremos la disponibilidad por correo electrónico
-                en las próximas 24 horas.
+          {/* Left side - Form */}
+          <div className='appointment-form-section'>
+            <div className='appointment-form-container'>
+              <h1 className='header appointment-header'>Reserva tu Cita</h1>
+              <p className='appointment-subtitle'>
+                Completa el formulario y te contactaremos para confirmar tu cita.
               </p>
+
+              <form className='appointment-form' onSubmit={handleSubmit}>
+                <div className='form-group'>
+                  <label htmlFor='name'>Nombre completo *</label>
+                  <input
+                    type='text'
+                    id='name'
+                    name='name'
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    placeholder='Tu nombre completo'
+                  />
+                </div>
+
+                <div className='form-group'>
+                  <label htmlFor='email'>Correo electrónico *</label>
+                  <input
+                    type='email'
+                    id='email'
+                    name='email'
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    placeholder='tu@email.com'
+                  />
+                </div>
+
+                <div className='form-group'>
+                  <label htmlFor='sessionType'>Tipo de sesión *</label>
+                  <select
+                    id='sessionType'
+                    name='sessionType'
+                    value={formData.sessionType}
+                    onChange={handleChange}
+                    required
+                  >
+                    {sessionTypes.map(type => (
+                      <option key={type.value} value={type.value}>
+                        {type.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className='form-group'>
+                  <label htmlFor='date'>Fecha deseada *</label>
+                  <input
+                    type='date'
+                    id='date'
+                    name='date'
+                    value={formData.date}
+                    onChange={handleChange}
+                    min={today}
+                    required
+                  />
+                </div>
+
+                <div className='form-group'>
+                  <label htmlFor='time'>Hora preferida *</label>
+                  <select
+                    id='time'
+                    name='time'
+                    value={formData.time}
+                    onChange={handleChange}
+                    required
+                  >
+                    {availableTimes.map(time => (
+                      <option key={time.value} value={time.value}>
+                        {time.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <button type='submit' className='btn-primary appointment-submit'>
+                  Solicitar Cita
+                </button>
+              </form>
+
+              <div className='appointment-info'>
+                <p className='info-note'>
+                  <strong>Nota:</strong> Esta es una solicitud de cita.
+                  Te confirmaremos la disponibilidad por correo electrónico
+                  en las próximas 24 horas.
+                </p>
+              </div>
             </div>
+          </div>
+
+          {/* Right side - Animation */}
+          <div className='appointment-animation-section'>
+            <img
+              src={therapistAnimation}
+              alt="Terapia animación"
+              className='therapist-animation'
+            />
           </div>
         </div>
       </div>

@@ -5,39 +5,66 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  padding: 10% 2rem;
   overflow-y: auto;
+  gap: 3rem;
+}
+
+/* Form Section - Left Side */
+.appointment-form-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 550px;
 }
 
 .appointment-form-container {
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
-  padding: 2.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation Section - Right Side */
+.appointment-animation-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 550px;
+}
+
+.therapist-animation {
   width: 100%;
   max-width: 500px;
+  height: auto;
+  border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .appointment-header {
   text-align: center;
   margin-bottom: 0.75rem;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .appointment-subtitle {
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   color: #666;
   text-align: center;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Form Styles */
 .appointment-form {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .form-group {
@@ -56,8 +83,8 @@
 .form-group input,
 .form-group select {
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  padding: 10px 14px;
+  font-size: 14px;
+  padding: 8px 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: white;
@@ -82,19 +109,19 @@
   appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%237B6D8D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 16px center;
-  padding-right: 40px;
+  background-position: right 12px center;
+  padding-right: 35px;
 }
 
 .appointment-submit {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   width: 100%;
   max-width: none;
 }
 
 .appointment-info {
-  margin-top: 1.5rem;
-  padding: 1.25rem;
+  margin-top: 1rem;
+  padding: 1rem;
   background-color: rgba(123, 109, 141, 0.05);
   border-radius: 8px;
   border-left: 4px solid #7B6D8D;
@@ -102,7 +129,7 @@
 
 .info-note {
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   color: #666;
   line-height: 1.5;
   margin: 0;
@@ -112,50 +139,27 @@
   color: #7B6D8D;
 }
 
-/* Laptop screens */
-@media (max-width: 1440px) {
-  .appointment-content {
-    padding: 1.5rem;
-  }
-
-  .appointment-form-container {
-    padding: 2rem;
-    max-width: 450px;
-  }
-
-  .appointment-header {
-    font-size: 28px;
-  }
-
-  .appointment-subtitle {
-    font-size: 14px;
-  }
-
-  .form-group input,
-  .form-group select {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
   .appointment-content {
-    padding: 1rem;
-    align-items: flex-start;
-    height: auto;
-    min-height: 100%;
+    flex-direction: column;
+    padding: 10% 1rem;
+    gap: 2rem;
+  }
+
+  .appointment-form-section,
+  .appointment-animation-section {
+    max-width: 100%;
+    width: 100%;
   }
 
   .appointment-form-container {
     padding: 1.5rem;
     max-width: 100%;
-    margin: 0;
   }
 
   .appointment-header {
     font-size: 26px;
-    margin-bottom: 0.5rem;
   }
 
   .appointment-subtitle {
@@ -170,17 +174,20 @@
   .form-group input,
   .form-group select {
     font-size: 16px; /* Prevents zoom on iOS */
-    padding: 12px 14px;
+    padding: 10px 14px;
   }
 
-  .appointment-info {
-    margin-top: 1.25rem;
-    padding: 1rem;
+  .therapist-animation {
+    max-width: 100%;
   }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
+  .appointment-content {
+    padding: 10% 0.75rem;
+  }
+
   .appointment-form-container {
     padding: 1.25rem;
   }
@@ -197,13 +204,7 @@
     font-size: 12px;
   }
 
-  .form-group input,
-  .form-group select {
-    font-size: 16px; /* Prevents zoom on iOS */
-    padding: 10px 12px;
-  }
-
   .info-note {
-    font-size: 12px;
+    font-size: 11px;
   }
 }

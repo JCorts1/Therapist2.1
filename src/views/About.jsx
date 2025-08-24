@@ -22,7 +22,7 @@ const About = () => {
   const images = [
     "https://placehold.co/600x400/E4D6D6/333333?text=Espacio+Seguro",
     ProfilePic,
-    "https://placehold.co/600x400/D6E4D8/333333?text=Terapia+con+Niños",
+    "https://placehold.co/600x400/D6E4D8/333333?text=Sesiones+con+Niños",
     KidsTherapy,
     "https://placehold.co/600x400/E4E4D6/333333?text=Crecimiento+Personal",
     PersonalDev,

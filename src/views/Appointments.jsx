@@ -16,8 +16,8 @@ const Appointments = () => {
   const sessionTypes = [
     { value: '', label: 'Selecciona un tipo de sesión' },
     { value: 'primera-consulta', label: 'Primera Consulta' },
-    { value: 'terapia-individual', label: 'Terapia Individual' },
-    { value: 'terapia-pareja', label: 'Terapia de Pareja' },
+    { value: 'sesion-individual', label: 'Sesión Individual' },
+    { value: 'sesion-pareja', label: 'Sesión de Pareja' },
     { value: 'evaluacion', label: 'Evaluación Psicológica' }
   ];
 
@@ -191,7 +191,7 @@ const Appointments = () => {
           <div className='appointment-animation-section'>
             <img
               src={therapistAnimation}
-              alt="Terapia animación"
+              alt="Psicóloga animación"
               className='therapist-animation'
             />
           </div>

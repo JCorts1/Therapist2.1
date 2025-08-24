@@ -11,10 +11,10 @@
 
 .home-links {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding: 0 40px;
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
 }
 

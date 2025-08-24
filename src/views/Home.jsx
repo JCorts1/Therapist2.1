@@ -41,7 +41,6 @@ const Home = () => {
 
             <div className='home-links'>
               <Link to="/about" className='btn-primary'>MÁS SOBRE MÍ</Link>
-              <Link to="/therapy" className='btn-primary'>TERAPIA</Link>
               <Link to="/appointment" className='btn-primary'>RESERVA UNA CITA</Link>
               <Link to="/contact" className='btn-primary'>CONTÁCTAME</Link>
             </div>

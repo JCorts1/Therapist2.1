@@ -74,7 +74,7 @@ const About = () => {
               <ul>
                 <li><strong>Profundidad y Raíz (Psicoanálisis):</strong> Exploramos juntos el origen de tus emociones y patrones de comportamiento para lograr una comprensión profunda que libere y sane desde la raíz.</li>
                 <li><strong>Mente y Cerebro (Neuroplasticidad y PNL):</strong> Utilizo técnicas basadas en la ciencia de la neuroplasticidad y la Programación Neurolingüística (PNL) para ayudarte a entender y reconfigurar tus patrones de pensamiento, creando nuevas rutas neuronales hacia la calma y la claridad mental.</li>
-                <li><strong>Presencia y Calma (Meditación y Mindfulness):</strong> Diseño e imparto ejercicios de meditación y atención plena para desarrollar una mayor consciencia sobre ti mismo, permitiéndote encontrar un refugio de paz interior en medio del caos exterior.</li>
+                <li><strong>Presencia y Calma (Meditación y Mindfulness):</strong> Diseño e imparto ejercicios de meditación y atención plena para desarrollar una mayor consciencia sobre ti mismo y todas las herramientas infinitas que tienes a disposición según tus objetivos.</li>
               </ul>
               <h2>Áreas de Experiencia</h2>
               <ul>

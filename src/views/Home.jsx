@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import '../assets/styles/Home.css'
 import '../App.css';
 import logo from '../assets/img/logo.jpg';
+import SplashScreen from '../components/SplashScreen';
 
 const Home = () => {
+  const [showSplash, setShowSplash] = useState(true);
+
+  const handleSplashComplete = () => {
+    setShowSplash(false);
+  };
+
   return (
     <div className='main-container'>
+      {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
       <div className='layout home-layout'>
         {[...Array(5)].map((_, i) => (
           <div key={i} className='leaf'>

@@ -16,7 +16,7 @@ const Contact = () => {
       `Nombre: ${data.name}\nEmail: ${data.email}\nTeléfono: ${data.phone || 'No proporcionado'}\n\nMensaje:\n${data.message}`
     );
 
-    window.location.href = `mailto:tatiana@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:tatiana101sas@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -122,7 +122,7 @@ const Contact = () => {
                 </svg>
                 <div>
                   <h3>Email</h3>
-                  <a href="mailto:tatiana@example.com">tatiana@example.com</a>
+                  <a href="mailto:tatiana101sas@gmail.com">tatiana101sas@gmail.com</a>
                 </div>
               </div>
 
@@ -132,7 +132,7 @@ const Contact = () => {
                 </svg>
                 <div>
                   <h3>Teléfono</h3>
-                  <a href="tel:+573001234567">+57 300 123 4567</a>
+                  <a href="tel:+573126256538">+57 3126256538</a>
                 </div>
               </div>
 
@@ -144,7 +144,7 @@ const Contact = () => {
                 </svg>
                 <div>
                   <h3>LinkedIn</h3>
-                  <a href="https://linkedin.com/in/tatiana-loaiza" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/tatiana-loaiza-valencia-672591187/?trk=opento_sprofile_goalscard" target="_blank" rel="noopener noreferrer">
                     /in/tatiana-loaiza
                   </a>
                 </div>

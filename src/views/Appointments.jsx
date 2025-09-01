@@ -59,7 +59,7 @@ const Appointments = () => {
     );
 
     // Open email client
-    window.location.href = `mailto:tatiana@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:tatiana101sas@gmail.com?subject=${subject}&body=${body}`;
 
     // Optional: Show confirmation message
     alert('Tu solicitud ha sido enviada. Te contactaremos pronto para confirmar tu cita.');

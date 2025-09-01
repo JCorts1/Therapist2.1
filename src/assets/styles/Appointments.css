@@ -250,3 +250,191 @@
     font-size: 11px;
   }
 }
+
+/* Large desktop screens - 1600px and up (avoiding MacBook sizes) */
+@media (min-width: 1600px) {
+  .appointment-content {
+    gap: 2.5rem;
+    padding: 3rem;
+    overflow-y: visible;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .appointment-form-section,
+  .appointment-animation-section {
+    max-width: 450px;
+  }
+
+  .appointment-form-container {
+    max-width: 400px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .appointment-header {
+    font-size: 28px;
+    margin-bottom: 0.7rem;
+  }
+
+  .appointment-subtitle {
+    font-size: 14px;
+    margin-bottom: 1.25rem;
+  }
+
+  .appointment-form {
+    gap: 0.9rem;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+
+  .appointment-info {
+    padding: 0.9rem;
+    border-radius: 8px;
+  }
+
+  .info-note {
+    font-size: 12px;
+  }
+
+  .therapist-animation {
+    max-width: 450px;
+    border-radius: 12px;
+  }
+}
+
+/* Extra large desktop screens - 1920px and up */
+@media (min-width: 1920px) {
+  .appointment-content {
+    gap: 3rem;
+    padding: 3.5rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .appointment-form-section,
+  .appointment-animation-section {
+    max-width: 500px;
+  }
+
+  .appointment-form-container {
+    max-width: 450px;
+    padding: 1.75rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .appointment-header {
+    font-size: 30px;
+    margin-bottom: 0.8rem;
+  }
+
+  .appointment-subtitle {
+    font-size: 15px;
+    margin-bottom: 1.4rem;
+  }
+
+  .appointment-form {
+    gap: 1rem;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 15px;
+    padding: 9px 13px;
+    border-radius: 9px;
+  }
+
+  .appointment-info {
+    padding: 1rem;
+    border-radius: 9px;
+  }
+
+  .info-note {
+    font-size: 13px;
+  }
+
+  .therapist-animation {
+    max-width: 500px;
+    border-radius: 14px;
+  }
+}
+
+/* Ultra-wide screens - 2560px and up */
+@media (min-width: 2560px) {
+  .appointment-content {
+    gap: 3.5rem;
+    padding: 4rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .appointment-form-section,
+  .appointment-animation-section {
+    max-width: 550px;
+  }
+
+  .appointment-form-container {
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .appointment-header {
+    font-size: 32px;
+    margin-bottom: 0.9rem;
+  }
+
+  .appointment-subtitle {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+  }
+
+  .appointment-form {
+    gap: 1.1rem;
+  }
+
+  .form-group label {
+    font-size: 15px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 10px;
+  }
+
+  .appointment-info {
+    padding: 1.1rem;
+    border-radius: 10px;
+  }
+
+  .info-note {
+    font-size: 14px;
+  }
+
+  .therapist-animation {
+    max-width: 550px;
+    border-radius: 16px;
+  }
+}

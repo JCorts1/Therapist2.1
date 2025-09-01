@@ -19,7 +19,8 @@
 }
 
 .header {
-  padding-left: 1rem;
+  padding-left: 0;
+  text-align: left;
 }
 
 .home-paragraph {
@@ -29,8 +30,9 @@
   line-height: 1.8;
   text-align: left;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0;
   padding-bottom: 3rem;
+  padding-left: 0;
 }
 
 @media (max-width: 768px) {
@@ -81,6 +83,7 @@
   .home-paragraph {
     font-size: 16px;
     padding-bottom: 1.5rem;
+    padding-left: 0;
     text-align: center;
   }
 
@@ -125,6 +128,7 @@
   .home-paragraph {
     font-size: 15px;
     padding-bottom: 1.25rem;
+    padding-left: 0;
   }
 
   .home-links {
@@ -134,5 +138,116 @@
   .btn-primary {
     font-size: 12px;
     padding: 12px 20px;
+  }
+}
+
+/* Large desktop screens - 1600px and up (avoiding MacBook sizes) */
+@media (min-width: 1600px) {
+  .home-layout {
+    margin-top: -7.5rem;
+    min-height: 96%;
+  }
+
+  .home-logo {
+    width: 32rem;
+  }
+
+  .header {
+    font-size: 40px;
+    margin-bottom: 2.2rem;
+  }
+
+  .home-paragraph {
+    font-size: 19px;
+    line-height: 1.8;
+    max-width: 650px;
+    padding-bottom: 3.2rem;
+  }
+
+  .home-links {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 22px;
+    padding: 0 45px;
+    max-width: 700px;
+  }
+
+  .btn-primary {
+    font-size: 15px;
+    padding: 17px 34px;
+    min-height: 54px;
+  }
+}
+
+/* Extra large desktop screens - 1920px and up */
+@media (min-width: 1920px) {
+  .home-layout {
+    margin-top: -9rem;
+    min-height: 92%;
+  }
+
+  .home-logo {
+    width: 42rem;
+  }
+
+  .header {
+    font-size: 52px;
+    margin-bottom: 3rem;
+  }
+
+  .home-paragraph {
+    font-size: 24px;
+    line-height: 2.0;
+    max-width: 800px;
+    padding-bottom: 4rem;
+  }
+
+  .home-links {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 0 60px;
+    max-width: 900px;
+  }
+
+  .btn-primary {
+    font-size: 18px;
+    padding: 20px 40px;
+    min-height: 60px;
+  }
+}
+
+/* Ultra-wide screens - 2560px and up */
+@media (min-width: 2560px) {
+  .home-layout {
+    margin-top: -10rem;
+    min-height: 90%;
+  }
+
+  .home-logo {
+    width: 50rem;
+  }
+
+  .header {
+    font-size: 64px;
+    margin-bottom: 3.5rem;
+  }
+
+  .home-paragraph {
+    font-size: 28px;
+    line-height: 2.1;
+    max-width: 1000px;
+    padding-bottom: 4.5rem;
+  }
+
+  .home-links {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    padding: 0 80px;
+    max-width: 1200px;
+  }
+
+  .btn-primary {
+    font-size: 20px;
+    padding: 24px 48px;
+    min-height: 68px;
   }
 }

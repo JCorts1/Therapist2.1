@@ -28,7 +28,7 @@
   font-size: 18px;
   color: #333333;
   line-height: 1.8;
-  text-align: left;
+  text-align: justify;
   max-width: 600px;
   margin: 0;
   padding-bottom: 3rem;
@@ -77,14 +77,14 @@
     padding: 0;
     font-size: 28px;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: left;
   }
 
   .home-paragraph {
     font-size: 16px;
     padding-bottom: 1.5rem;
     padding-left: 0;
-    text-align: center;
+    text-align: justify;
   }
 
   .home-links {
@@ -136,6 +136,7 @@
     font-size: 15px;
     padding-bottom: 1.25rem;
     padding-left: 0;
+    text-align: justify;
   }
 
   .home-links {

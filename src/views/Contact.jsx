@@ -16,7 +16,7 @@ const Contact = () => {
       `Nombre: ${data.name}\nEmail: ${data.email}\nTeléfono: ${data.phone || 'No proporcionado'}\n\nMensaje:\n${data.message}`
     );
 
-    window.location.href = `mailto:tatiana101sas@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:indigoespiritulibre@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -122,7 +122,7 @@ const Contact = () => {
                 </svg>
                 <div>
                   <h3>Email</h3>
-                  <a href="mailto:tatiana101sas@gmail.com">tatiana101sas@gmail.com</a>
+                  <a href="mailto:indigoespiritulibre@gmail.com">indigoespiritulibre@gmail.com</a>
                 </div>
               </div>
 

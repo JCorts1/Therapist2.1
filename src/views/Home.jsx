@@ -43,7 +43,8 @@ const Home = () => {
                 Un Espacio Seguro para sanar y evolucionar a tu propio ritmo.
               </h1>
               <p className='home-paragraph text-left'>
-                A veces la vida nos presenta momentos difíciles. Aprender a navegar esos retos es el primer paso para construir una vida más plena. Estoy aquí para acompañarte en ese camino.
+                Ser partícipes de la vida integral
+con determinación y en acción hacia una consciencia que nos nutre, brinda respuestas e indica el camino pleno de sanación. Estoy aquí para acompañarte y explorar en lo infinito de tu ser...en ese camino, paso a paso con luz, paciencia y amor.
               </p>
             </div>
 

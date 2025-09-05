@@ -43,10 +43,9 @@ const Home = () => {
                 Un Espacio Seguro para sanar y evolucionar a tu propio ritmo.
               </h1>
               <p className='home-paragraph text-left'>
-                Ser partícipes de la vida integral
+                Ser partícipes de la vida integral.
                 <br></br>
-                <br></br>
-                con determinación y en acción hacia una consciencia que nos nutre, brinda respuestas e indica el camino pleno de sanación. Estoy aquí para acompañarte y explorar en lo infinito de tu ser...en ese camino, paso a paso con luz, paciencia y amor.
+                Con determinación y en acción hacia una consciencia que nos nutre, brinda respuestas e indica el camino pleno de sanación. Estoy aquí para acompañarte y explorar en lo infinito de tu ser... en ese camino, paso a paso con luz, paciencia y amor.
               </p>
             </div>
 
